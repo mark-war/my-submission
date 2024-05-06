@@ -1,0 +1,96 @@
+.listing-page {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  .listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .listing-item {
+    flex: 1 0 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .listing-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .listing-item h1 {
+    margin: 0;
+  }
+  
+  .listing-item p {
+    margin: 5px 0;
+  }
+  
+  .listing-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff5555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .listing-item button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .listing-item {
+      flex-basis: calc(50% - 20px); /* Two items per row */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .listing-item {
+      flex-basis: calc(100% - 20px); /* Single item per row */
+    }
+  }
+  
+  .listing-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .sort-button {
+    margin-top: 20px;
+  }
+
+
+  .sort-button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff5555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .sort-button:hover {
+    background-color: #cc0000;
+  }
+
+  /* CSS for fade-out animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  .fade-out {
+    animation: fadeOut 120s ease-in-out; /* Adjust duration and timing function as needed */
+  }
+  
